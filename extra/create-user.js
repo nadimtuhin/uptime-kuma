@@ -42,6 +42,7 @@ const main = async () => {
                 user.username = username;
                 user.password = passwordHash.generate(password);
                 await R.store(user);
+                break;
             }
             console.log("User created successfully.");
         }
